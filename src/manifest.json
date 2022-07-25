@@ -1,0 +1,30 @@
+{
+  "name": "My first Google Chrome Extension",
+  "description": "This is MSYNK's first google chrome extension!",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/profile-ltr-16.png",
+      "32": "/images/profile-ltr-32.png",
+      "48": "/images/profile-ltr-48.png",
+      "128": "/images/profile-ltr-128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/profile-ltr-16.png",
+    "32": "/images/profile-ltr-32.png",
+    "48": "/images/profile-ltr-48.png",
+    "128": "/images/profile-ltr-128.png"
+  },
+  "options_page": "options.html"
+}
